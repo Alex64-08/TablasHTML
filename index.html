@@ -21,7 +21,6 @@
             width: 56px;
             height: 56px;
         }
-
     </style>
 </head>
 
@@ -37,8 +36,7 @@
     <main class="container mb-5">
         <section class="row align-items-center g-4 mb-5">
             <div class="col-lg-6">
-                <img src="../tables2/img/pan.jpg"
-                    class="img-fluid rounded shadow-sm" alt="Panadería artesanal">
+                <img src="../tables2/img/pan.jpg" class="img-fluid rounded shadow-sm" alt="Panadería artesanal">
             </div>
             <div class="col-lg-6">
                 <h2>Un negocio local con sabor auténtico</h2>
@@ -71,6 +69,252 @@
             </div>
         </section>
 
+        <!-- Tabla de precios -->
+        <h3>Nuestros productos</h3>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr class="table-dark">
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Marca</th>
+                    <th>Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>000325</td>
+                    <td>Pan Bimbo</td>
+                    <td>Bimbo</td>
+                    <td>$3.25</td>
+                </tr>
+
+                <tr>
+                    <td>003465</td>
+                    <td>Pan Dulce</td>
+                    <td>Panadería</td>
+                    <td>$0.75</td>
+                </tr>
+
+                <tr>
+                    <td>007869</td>
+                    <td>Pan de Pan</td>
+                    <td>Pan</td>
+                    <td>$2.15</td>
+                </tr>
+
+                <tr>
+                    <td>000354</td>
+                    <td>Pan de Masa Madre</td>
+                    <td>Bimbo</td>
+                    <td>$2.35</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4" class="table-secondary">Productos internacionales</td>
+                </tr>
+
+                <tr>
+                    <td>000021</td>
+                    <td>Pan con Ajo</td>
+                    <td>Panadería 2</td>
+                    <td rowspan="2">$1.95</td>
+                </tr>
+
+                <tr>
+                    <td>000021</td>
+                    <td>Pastelito</td>
+                    <td>Bimbo</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- EJERCICIO 1: Cree un apartado llamado "Equipo Panadero", luego cree una tabla con la información de su equipo expo (incluyéndole a usted). Debe tener las siguientes columnas: Código, Nombre, Apellido, Rol, Sección Académica -->
+        <h3>Equipo Panadero</h3>
+        <table class="table table-bordered text-center align-middle">
+            <thead>
+                <tr class="table-dark">
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Rol</th>
+                    <th>Sección Académica</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>20240848</td>
+                    <td>Leonardo Daniel</td>
+                    <td>Romero Valladares</td>
+                    <td>Coordinador</td>
+                    <td>A - 3</td>
+                </tr>
+
+                <tr>
+                    <td>20250406</td>
+                    <td>Josué Alejandro</td>
+                    <td>Henríquez Portillo</td>
+                    <td>Subcoordinador</td>
+                    <td rowspan="2">A - 5</td>
+                </tr>
+
+                <tr>
+                    <td>20250596</td>
+                    <td>Daniel Isaias</td>
+                    <td>Cruz Galeas</td>
+                    <td>Secretario</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>20250827</td>
+                    <td>Franklin Edueardo </td>
+                    <td>Villanueva Vasquez</td>
+                    <td>Tesorero</td>
+                    <td rowspan="2">A - 4</td>
+                </tr>
+
+                <tr>
+                    <td>20250464</td>
+                    <td>Fernando Salvador</td>
+                    <td>Ramos Membreño</td>
+                    <td>Vocal</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- EJERCICIO 2: Cree un apartado llamado "Horarios de atención". Luego, cree una tabla con su horario de clases. Debe usar RowSpan para Recesos y Buenos Días, y ColSpan para clases iguales seguidas -->
+
+        <h3>Horarios de atención</h3>
+        <table class="table table-bordered text-center align-middle">
+            <thead>
+                <tr class="table-dark">
+                    <th>Hora</th>
+                    <th>Lunes</th>
+                    <th>Martes</th>
+                    <th>Miércoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>7:00/7:15</td>
+                    <td colspan="5">Buenos días</td>
+                
+                </tr>
+
+                <tr>
+                    <td>7:15/7:50</td>
+                    <td rowspan="2">Sociales</td>
+                    <td rowspan="2">Sociales</td>
+                    <td rowspan="2">Lenguaje</td>
+                    <td rowspan="2">Hora Pastoral</td>
+                    <td rowspan="2">Matemáticas</td>
+                </tr>
+
+                <tr>
+                    <td>7:50/8:25</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6" class="table-secondary">Receso</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>8:50/9:25</td>
+                    <td>Sociales</td>
+                    <td rowspan="2">Inglés</td>
+                    <td rowspan="2">OPV</td>
+                    <td rowspan="2">Jornada Técnica</td>
+                    <td>Lenguaje</td>
+                </tr>
+
+                <tr>
+                    <td>9:25/10:00</td>
+                    <td>Formación Cristiana</td>
+                    <td>Lenguaje</td>
+                    
+                </tr>
+
+                <tr>
+                    <td colspan="6" class="table-secondary">Receso</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>10:15/10:50</td>
+                    <td rowspan="2">Inglés</td>
+                    <td rowspan="2">Ciencias</td>
+                    <td rowspan="2">Matemáticas</td>
+                    <td rowspan="2">Jornada Técnica</td>
+                    <td rowspan="2">Jornada Técnica</td>
+                </tr>
+
+                <tr>
+                    <td>10:50/11:25</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6" class="table-secondary">Receso</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>11:40/12:15</td>
+                    <td>Formación Cristiana</td>
+                    <td>Ciencias</td>
+                    <td>Ciencias</td>
+                    <td>Jornada Técnica</td>
+                    <td>Jornada Técnica</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="table-warning">Almuerzo</td>
+                    <td class="table-success">Hora de Salida</td>
+                    <td colspan="2" class="table-warning">Almuerzo</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>1:10/1:45</td>
+                    <td rowspan="2">Ciencias</td>
+                    <td rowspan="2">Matemáticas</td>
+                    <td rowspan="2"></td>
+                    <td rowspan="2">Jornada Técnica</td>
+                    <td rowspan="2">Jornada Técnica</td>
+                </tr>
+
+                <tr>
+                    <td>1:45/2:20</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6" class="table-secondary">Receso</td>
+                    
+                </tr>
+
+                <tr>
+                    <td>3:10/3:45</td>
+                    <td rowspan="2">Educación Física</td>
+                    <td rowspan="2">Ciencias</td>
+                    <td rowspan="2"></td>
+                    <td rowspan="2">Jornada Técnica</td>
+                    <td rowspan="2">Jornada Técnica</td>
+                </tr>
+
+                <tr>
+                    <td>10:50/11:25</td>
+                </tr>
+
+                <tr>
+                    <td colspan="6" class="table-success">Salida</td>
+                    
+                </tr>
+            </tbody>
+        </table>
 
         <section class="row text-center g-4">
             <div class="col-md-4">
